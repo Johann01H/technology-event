@@ -1,4 +1,5 @@
-![Tech Event Banner](../techology-event/app/assets/images/readme-banner.png)
+![Tech Event Banner](./app/assets/images/readme-banner.png)
+
 
 # 🚀 Tech Innovate 2026
 
@@ -23,7 +24,7 @@ Este proyecto está construido con **Next.js** y está diseñado para servir com
 
 ---
 
-# 🛠️ Tecnologías utilizadas
+    # 🛠️ Tecnologías utilizadas
 
 - **Next.js**
 - **React**
@@ -38,3 +39,5 @@ Este proyecto está construido con **Next.js** y está diseñado para servir com
 Clona el repositorio:
 
 ```bash
+
+git clone https://github.com/Johann01H/technology-event-Don-ignacio.git
