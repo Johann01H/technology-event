@@ -7,7 +7,7 @@ interface PropsSpeakears {
 
 export const speakersItems: PropsSpeakears[] = [
     {
-        speakerImage: "/images/avatar-jairo.webp",
+        speakerImage: "/images/avatar-jairo.webp"  ,
         title: "Jairo Alberto Gomez",
         specialty: "" ,
         email: "asociadosabogadosjl@gmail.com",
@@ -25,13 +25,13 @@ export const speakersItems: PropsSpeakears[] = [
         email: "johannvelez71@gmail.com",
     },
     {
-        speakerImage: "/images/avatar-maribel-salamanca.wepb",
+        speakerImage: "/images/avatar-maribel-salamanca.webp",
         title: "Flor Maribel Salamanca",
         specialty: "SEO / Marketing / LuckyCommerce" ,
         email: "occidentemovilidadrg@nexsysla.com",
     },
     {
-        speakerImage: "/images/avatar-jhonatan-ramos.wepb",
+        speakerImage: "/images/avatar-jhonatan-ramos.webp",
         title: "Jhonatan Ramos",
         specialty: "Fundación | Coomeva" ,
         email: "johnnatans_ramos@coomeva.com.co",

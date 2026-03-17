@@ -6,8 +6,14 @@ import { FaFacebook, FaInstagram } from "react-icons/fa"
 import { TiSocialLinkedin } from "react-icons/ti"
 
 export const CustomSpeakers = () => {
+    
 return (
-<div className="grid ">
+
+    
+    <div className="grid ">
+
+    *TODO: Is pending the style of cards. 
+
     <div className="text-center mb-15">
         <h5 className="text-orange-600 text-2xl mb-2 font-bold">Nuestros speakers, tu inspiración.</h5>
         <h1 className=" text-[#041A57] text-6xl font-bold">Explora a nuestros speakers <br /> Seguimos creciendo cada
@@ -29,7 +35,7 @@ return (
                     <CardTitle className="text-center">{speakears.title}</CardTitle>
                     <CardContent className="text-center">
                         <p>{speakears.specialty}</p>
-                        <p className="text-orange-600">{speakears.email}</p>
+                        <p className="text-orange-600 mb-5">{speakears.email}</p>
                         <div className="flex items-center justify-center gap-2">
                             <Avatar>
                                 <AvatarFallback>

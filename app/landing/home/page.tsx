@@ -3,7 +3,7 @@ import { CustomInscriptions,CustomLiveYourLife,CustomSpeakers,CustomBanner } fro
 export default function HomePage() {
   return (
     <div>
-        <section className="p-5 w-full"id="banner"
+        <section className="p-5 w-full" id="banner"
         >
           <CustomBanner
           
@@ -29,7 +29,7 @@ export default function HomePage() {
           
         />
         </section>
-        <section className="p-5"id="inscribete">
+        <section className="p-5" id="inscribete">
           <CustomInscriptions 
           
         />
