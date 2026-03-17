@@ -7,7 +7,7 @@ interface Props {
 }
 
 const linksItems:Props[] = [
-    {path: "/",title: "Home"},
+    {path: "#banner",title: "Home"},
     {path: "#vivetuvida",title: "Vive tu vida"},
     {path: "#speakers",title: "Spekears"},
     {path: "#inscribete",title: "inscribete"},
@@ -17,18 +17,19 @@ export const CustomHeader = () => {
     
     return (
     <>
-        <nav className="flex items-center justify-between bg-gray-500 p-4">
+        <nav className="flex items-center justify-around bg-white shadow-2xl p-5">
             <div>
                 <Image
-                    src={"/assets/images/logo.webp"} 
+                    src={"/images/logo.webp"} 
                     alt="logo-datasys"
-                    width={100}
+                    width={150}
                     height={50}
+                    priority
                 />
             </div>
-            <div>
+            <div>   
                 {linksItems.map((link) => (
-                    <Link className="mr-4" key={link.path} href={link.path}>{link.title}</Link>
+                    <Link className="mr-4 font-bold  " key={link.path} href={link.path}>{link.title}</Link>
                 ))}
             </div>
         </nav>
