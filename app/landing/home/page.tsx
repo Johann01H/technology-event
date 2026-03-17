@@ -12,7 +12,6 @@ export default function HomePage() {
         </section>
         <section id="vivetuvida">
           <CustomLiveYourLife
-          
         />
         </section>
         <section 
@@ -25,11 +24,9 @@ export default function HomePage() {
               minHeight: "400px"
           }}>
           <CustomSpeakers
-          
-          
         />
         </section>
-        <section className="p-5" id="inscribete">
+        <section className="p-5 bg-[#F2F2F2] py-25" id="inscribete">
           <CustomInscriptions 
           
         />
