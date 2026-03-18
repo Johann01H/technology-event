@@ -30,7 +30,7 @@ return (
                         <Image 
                             src={speakears.speakerImage} 
                             alt={speakears.title}
-                            className="flex justify-center rounded-full mx-auto md:justify-center mb-7" 
+                            className="flex justify-center rounded-full mx-auto md-7" 
                             width={150}
                             height={100} 
                         />
