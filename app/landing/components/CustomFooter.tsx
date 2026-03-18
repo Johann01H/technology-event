@@ -50,7 +50,7 @@ return (
                     </div>
                 </div>
 
-                <div className="flex flex-col items-center md:items-start w-full">
+                <div className="flex flex-col items-center lg:ml-30 md:items-start w-full">
                     <h1 className="text-white text-xl font-poppins font-extrabold mb-8 uppercase tracking-wider">
                         Páginas
                     </h1>
