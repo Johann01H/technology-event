@@ -4,7 +4,18 @@
 
 @custom-variant dark (&:is(.dark *));
 
+html, body {
+    /* Evita que cualquier elemento "empuje" el ancho de la pantalla */
+    max-width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+
 @theme inline {
+
+  --font-poppins: var(--font-poppins);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-sans);
@@ -121,7 +132,12 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    background-color: var(--background);
+    color: var(--foreground);
+    /* Aplicamos Poppins como fuente base */
+    font-family: var(--font-poppin), ui-sans-serif, system-ui;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
   html {
     @apply font-sans;

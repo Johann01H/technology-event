@@ -1,5 +1,4 @@
 import Image from "next/image"
-import { Avatar } from "@/components/ui/avatar"
 import { FaFacebook, FaInstagram, FaPhoneAlt, FaYoutube } from "react-icons/fa"
 import { FaLocationDot } from "react-icons/fa6"
 import { MdMarkEmailUnread } from "react-icons/md"
@@ -11,93 +10,91 @@ title: string
 path: string,
 }
 
-const ItemsLink:PropsItemsLinks[] = [
-{
-title: "Home",
-path:"#banner",
-},
-{
-title: "Speakers",
-path:"#speakers",
-},
-{
-title: "Inscribete",
-path:"#inscribete",
-},
-{
-title: "Vive tu vida",
-path:"#vivetuvida",
-}
+const ItemsLink: PropsItemsLinks[] = [
+{ title: "Home", path: "#banner" },
+{ title: "Speakers", path: "#speakers" },
+{ title: "Inscribete", path: "#inscribete" },
+{ title: "Vive tu vida", path: "#vivetuvida" }
 ]
 
 export const CustomFooter = () => {
 return (
 <>
-    <footer className="bg-[#101010] py-30 ">
-      <div className="container mx-auto">
-        <div className="grid grid-cols-3 px-55">
-            <div className="px-1">
-                <Image src={"/images/logo.webp"} alt="placehold" className="text-white mb-5" width={150} height={150} />
-                <p className="text-white text-[15px]">
-                    Tecnología a su servicio es nuestra carta de presentación, presentamos diferentes alternativas en el
-                    mercado de soluciones en tecnología,
-                    una gran gama de productos de las más reconocidas marcas.
-                </p>
-                <div className="mt-4 space-y-2">
-                    <p className="flex items-center gap-2 text-white text-[13px]">
-                        <FaLocationDot className="text-orange-600 size-5" />
-                        <span>Carrera 28 # 28-56 Of 301 Edif Torrepac</span>
+    <footer className="bg-[#101010] py-16 md:py-24">
+        <div className="w-full max-w-350 mx-auto px-6 sm:px-10 lg:px-16">
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-24">
+
+                <div className="flex flex-col items-center md:items-start w-full">
+                    <Image src="/images/logo.webp" alt="Logo Datasys" className="mb-8" width={160} height={160} priority />
+                    <p
+                        className="text-white text-[15px] text-center md:text-left leading-relaxed max-w-sm md:max-w-none">
+                        Tecnología a su servicio es nuestra carta de presentación, presentamos diferentes alternativas
+                        en el
+                        mercado de soluciones en tecnología.
                     </p>
 
-                    <p className="flex items-center gap-2 text-white text-[13px]">
-                        <MdMarkEmailUnread className="text-orange-600 size-5  shrink-0" />
-                        <span>datasyspal@gmail.com</span>
-                    </p>
+                    <div className="mt-8 space-y-5 w-full">
+                        <p className="flex items-start gap-4 text-white text-[13px]">
+                            <FaLocationDot className="text-orange-600 size-5 shrink-0 mt-1" />
+                            <span>Carrera 28 # 28-56 Of 301 Edif Torrepac</span>
+                        </p>
+                        <p className="flex items-center gap-4 text-white text-[13px]">
+                            <MdMarkEmailUnread className="text-orange-600 size-5 shrink-0" />
+                            <span>datasyspal@gmail.com</span>
+                        </p>
+                        <p className="flex items-center gap-4 text-white text-[13px]">
+                            <FaPhoneAlt className="text-orange-600 size-5 shrink-0" />
+                            <span>(+57) 3132315425 / 3027097117</span>
+                        </p>
+                    </div>
+                </div>
 
-                    <p className="flex items-center gap-2 text-white text-[13px]">
-                        <FaPhoneAlt className="text-orange-600 size-5 shrink-0" />
-                        <span>(+57) 3132315425 / (+57) 3027097117</span>
-                    </p>
+                <div className="flex flex-col items-center md:items-start w-full">
+                    <h1 className="text-white text-xl font-poppins font-extrabold mb-8 uppercase tracking-wider">
+                        Páginas
+                    </h1>
+                    <div className="flex flex-col items-center md:items-start space-y-4 w-full">
+                        {ItemsLink.map((link) => (
+                        <Link
+                            className="text-white text-[14px] hover:text-orange-600 transition-colors duration-300 w-full text-center md:text-left"
+                            key={link.path} href={link.path}>
+                        {link.title}
+                        </Link>
+                        ))}
+                    </div>
                 </div>
-            </div>
-            <div className="px-30">
-                <h1 className="text-white text-2xl font-bold mb-5">Páginas</h1>
-                <div className="flex flex-col">
-                    {
-                    ItemsLink.map(( link) => (
-                    <Link className="text-white mb-2  text-[13px hover:text-orange-600" key={link.path} href={ link.path }>
-                    {link.title}
-                    </Link>
-                    ))
-                    }
-                </div>
-            </div>
-            <div className="px-10">
-                <h1 className="text-white font-bold text-2xl">Redes Sociales</h1>
-                <div className=" flex items center mt-4">
-                    <Card 
-                        className="w-12 h-12 bg-[#3b5998] rounded-full p-0 flex items-center justify-center overflow-hidden mr-1 ">
-                        <FaFacebook className=" cursor-pointer size-6 text-white" />
-                    </Card>
-                    <Card
-                        className="w-12 h-12 bg-blue-500 rounded-full p-0 flex items-center justify-center overflow-hidden mr-1">
-                        <FaInstagram className="size-6 cursor-pointer text-white" />
-                    </Card>
-                    <Card
-                        className="w-12 h-12 bg-red-500 rounded-full p-0 flex items-center justify-center overflow-hidden mr-1">
-                        <FaYoutube className="size-6 cursor-pointer text-white" />
-                    </Card>
 
+                <div className="flex flex-col items-center md:items-start w-full">
+                    <h1 className="text-white text-xl font-poppins font-extrabold mb-8 uppercase tracking-wider">
+                        Redes Sociales
+                    </h1>
+                    <div className="flex gap-4 justify-center md:justify-start w-full">
+                        <Card
+                            className="w-12 h-12 bg-[#3b5998] border-none rounded-full flex items-center justify-center hover:scale-110 hover:shadow-[0_0_15px_rgba(59,89,152,0.6)] transition-all cursor-pointer">
+                            <FaFacebook className="size-6 text-white" />
+                        </Card>
+                        <Card
+                            className="w-12 h-12 bg-linear-to-tr from-yellow-400 via-red-500 to-purple-600 border-none rounded-full flex items-center justify-center hover:scale-110 hover:shadow-[0_0_15px_rgba(255,0,0,0.5)] transition-all cursor-pointer">
+                            <FaInstagram className="size-6 text-white" />
+                        </Card>
+                        <Card
+                            className="w-12 h-12 bg-red-600 border-none rounded-full flex items-center justify-center hover:scale-110 hover:shadow-[0_0_15px_rgba(255,0,0,0.7)] transition-all cursor-pointer">
+                            <FaYoutube className="size-6 text-white" />
+                        </Card>
+                    </div>
                 </div>
+
             </div>
         </div>
-      </div>
-
     </footer>
-    <div className="flex justify-center bg-black p-5">
-        <h1 className="text-gray-400"> © 2025 <span className="font-bold text-orange-500"> Datasys </span> Todos los
-            derechos reservados. Desarrollado con por <span className="font-bold text-orange-500">Luckycommerce
-                s.a.s</span> .</h1>
+
+    <div className="bg-black py-8 px-6 text-center border-t border-gray-800">
+        <h1 className="text-gray-400 text-sm leading-loose max-w-2xl mx-auto">
+            © 2026 <span className="font-bold text-orange-500 font-poppins"> Datasys </span>
+            Todos los derechos reservados. <br className="md:hidden" />
+            Desarrollado por <span className="font-bold text-orange-500 font-poppins">JoaDev</span>.
+        </h1>
     </div>
 </>
 )

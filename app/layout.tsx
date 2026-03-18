@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter } from "next/font/google";
+import { Geist, Geist_Mono, Inter,Poppins } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 
@@ -9,6 +9,12 @@ const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
+
+const poppins = Poppins({
+  variable: "--font-poppins",
+  subsets: ["latin"],
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+})
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -37,9 +43,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className={cn("font-sans scroll-smooth", inter.variable) }>
+    <html lang="es" className={cn("scroll-smooth", inter.variable, poppins.variable) }>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={` ${poppins.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>

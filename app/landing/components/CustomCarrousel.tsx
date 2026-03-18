@@ -14,6 +14,7 @@ export const CustomCarrousel = () => {
 
   return (
     <div className="w-full">
+        {/* *TODO: Is pending image modified !! */}
       <Carousel
         plugins={[plugin.current]}
         onMouseEnter={plugin.current.stop}
