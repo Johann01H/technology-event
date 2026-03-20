@@ -1,4 +1,5 @@
-![Tech Event Banner](./app/assets/images/readme-banner.png)
+![Tech Event Banner](public/images/image-readme.png)
+>>>>>>> dev/desarrollo
 
 
 # 🚀 Tech Innovate 2026
