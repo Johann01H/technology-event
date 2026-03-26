@@ -143,3 +143,19 @@ html, body {
     @apply font-sans;
   }
 }
+
+
+.nav-link { position: relative; }
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px; left: 0;
+  width: 100%; height: 3px;
+  border-radius: 25px;
+  background: linear-gradient(to right, #e879a0, #9b59d6);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+.nav-link:hover::after { transform: scaleX(1); }

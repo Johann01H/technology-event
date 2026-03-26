@@ -24,9 +24,12 @@ return (
                 speakersItems.map((speakears) => (
                 <Card 
                     key={speakears.email} 
-                    className="bg-white py-20 rounded-3xl border-transparent ring-0 cursor-pointer shadow-xl transition-all duration-500 hover:scale-90 hover:animate-breathe-sof" 
+                    className="bg-white rounded-3xl border-transparent ring-0 shadow-xl transition-all duration-500 hover:scale-90 hover:animate-breathe-sof" 
                 >
-                    <CardHeader>
+                        <div className="ml-4 mt-3 ">
+                            <span className="rounded-full p-2 text-white font-bold bg-orange-500">Speaker</span>
+                        </div>
+                    <CardHeader className="py-15">
                         <Image 
                             src={speakears.speakerImage} 
                             alt={speakears.title}
@@ -38,7 +41,7 @@ return (
                         <CardContent className="text-center">
                             <p className="font-poppins">{speakears.specialty}</p>
                             <p className="text-orange-600 mb-5 font-poppins">{speakears.email}</p>
-                            <div className="flex items-center justify-center gap-2">
+                            {/* <div className="flex items-center justify-center gap-2">
                                 <Avatar>
                                     <AvatarFallback>
                                         <FaFacebook className="w-6 h-6 text-black" />
@@ -54,7 +57,7 @@ return (
                                         <TiSocialLinkedin className="w-6 h-6 text-black" />
                                     </AvatarFallback>
                                 </Avatar>
-                            </div>
+                            </div> */}
                         </CardContent>
                     </CardHeader>
                 </Card>
