@@ -22,7 +22,7 @@ export const CustomHeader = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <header className="fixed top-0 left-0 w-full h-32 bg-linear-to-b from-black/90 via-black/30 to-transparent z-50">
+        <header className="fixed top-0 left-0 w-full h-32 bg-linear-to-b from-black/70 via-black/30 to-transparent z-50">
             <nav className="flex items-center justify-between lg:justify-baseline p-5 max-w-395 mx-auto">
                 {/* Logo */}
                 <div className="shrink-0">
