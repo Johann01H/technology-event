@@ -15,30 +15,33 @@ const linksItems: Props[] = [
     { path: "#vivetuvida", title: "Vive tu vida" },
     { path: "#speakers", title: "Speakers" },
     { path: "#inscribete", title: "Inscribete" },
+    
 ]
 
 export const CustomHeader = () => {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <header className="z-50 w-full bg-white shadow-2xl">
-            <nav className="flex items-center justify-between lg:justify-baseline p-5 max-w-350 mx-auto">
+        <header className="fixed top-0 left-0 w-full h-32 bg-linear-to-b from-black/70 via-black/30 to-transparent z-50">
+            <nav className="flex items-center justify-between lg:justify-baseline p-5 max-w-395 mx-auto">
                 {/* Logo */}
                 <div className="shrink-0">
-                    <Image
-                        src={"/images/logo.webp"}
-                        alt="logo-datasys"
-                        width={150}
-                        height={50}
-                        priority
-                    />
+                    <a href="https://chaconingenieria.com/datasys/" target="_blank">
+                        <Image
+                            src={"/images/logo.webp"}
+                            alt="logo-datasys"
+                            width={150}
+                            height={50}
+                            priority
+                        />
+                    </a>
                 </div>
 
                 {/* Desktop Links - Ocultos en mobile */}
                 <div className="hidden md:flex items-center">
                     {linksItems.map((link) => (
                         <Link 
-                            className="ml-8 font-bold text-[#041A57] hover:text-orange-600 transition-colors uppercase text-sm tracking-wider" 
+                            className="ml-8 font-normal text-white nav-link   transition-colors uppercase text-sm tracking-wider" 
                             key={link.path} 
                             href={link.path}
                         >
