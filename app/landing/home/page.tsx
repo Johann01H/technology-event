@@ -1,5 +1,6 @@
 import { CustomInscriptions,CustomLiveYourLife,CustomSpeakers,CustomBanner } from "../components";
 import { CustomCarrousel } from "../components/CustomCarrousel";
+import { CustomPortafoli } from "../components/CustomPortafoli";
 import { CustomTestimonial } from "../components/CustomTestimonial";
 
 export default function HomePage() {
@@ -25,16 +26,11 @@ export default function HomePage() {
               />
           </div>
       </section>
-        <section 
-          id="vivetuvida" 
-          className="scroll-mt-20 py-25 bg-[#F2F2F2]"
-        >
-          <CustomLiveYourLife
-            // Personalizado
-          />
+        <section id="portafolio">
+          <CustomPortafoli/>
         </section>
         <section 
-              className="p-5 py-15 scroll-mt-20" id="speakers"   
+              className=" scroll-mt-20" id="speakers"   
               style={{
               backgroundImage: 'url("/images/section-speakears.webp")',
               backgroundSize: "cover",
@@ -66,7 +62,7 @@ export default function HomePage() {
             // Personalizado
           />
         </section>
-        <section className="py-25 scroll-mt-20 ">
+        <section id="testimonios" className=" scroll-mt-20 ">
           <CustomTestimonial 
             // Personalizado
           />

@@ -26,13 +26,15 @@ export const CustomHeader = () => {
             <nav className="flex items-center justify-between lg:justify-baseline p-5 max-w-395 mx-auto">
                 {/* Logo */}
                 <div className="shrink-0">
-                    <Image
-                        src={"/images/logo.webp"}
-                        alt="logo-datasys"
-                        width={150}
-                        height={50}
-                        priority
-                    />
+                    <a href="https://chaconingenieria.com/datasys/" target="_blank">
+                        <Image
+                            src={"/images/logo.webp"}
+                            alt="logo-datasys"
+                            width={150}
+                            height={50}
+                            priority
+                        />
+                    </a>
                 </div>
 
                 {/* Desktop Links - Ocultos en mobile */}
