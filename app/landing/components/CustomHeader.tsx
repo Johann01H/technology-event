@@ -53,7 +53,7 @@ export const CustomHeader = () => {
                 <div className="md:hidden">
                     <button 
                         onClick={() => setIsOpen(!isOpen)}
-                        className="text-[#041A57] focus:outline-none p-2"
+                        className="text-white focus:outline-none p-2"
                     >
                         {isOpen ? <X size={30} /> : <Menu size={30} />}
                     </button>
