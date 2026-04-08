@@ -51,9 +51,18 @@ export const speakersItems: PropsSpeakears[] = [
     {
         speakerImage: "/images/avatar-javier.png",
         name: "Javier Andres",
-        specialty: "TP - LINK",
+        specialty: "Infraestructura de Red", // Más profesional que solo la marca
         email: "Johnnatans_ramos@coomeva.com.co",
-        topic: "Hardware de alta gama y servicios digitales de última generación.",
-        company: "Lenovo | Cali "
+        topic: "Soluciones de conectividad empresarial y redes de alta velocidad.", 
+        company: "TP-LINK | Cali"
+    },
+    {
+        speakerImage: "/images/avatar-ballesteros.png",
+        name: "Jhonathan Ballesteros",
+        specialty: "Hardware & Computación",
+        email: "Johnnatans_ramos@coomeva.com.co",
+        topic: "Innovación en hardware de alto rendimiento y ecosistemas digitales.",
+        company: "Lenovo | Cali"
     }
 ]
+

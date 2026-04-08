@@ -34,6 +34,7 @@ export const CustomCarrousel = () => {
                   alt={img.alt}
                   fill
                   className="object-cover"
+                  priority
                 />
               </div>
             </CarouselItem>

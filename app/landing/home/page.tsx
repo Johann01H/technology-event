@@ -1,4 +1,4 @@
-import { CustomInscriptions,CustomLiveYourLife,CustomSpeakers,CustomBanner } from "../components";
+import { CustomInscriptions,CustomSpeakers,CustomBanner } from "../components";
 import { CustomCarrousel } from "../components/CustomCarrousel";
 import { CustomPortafoli } from "../components/CustomPortafoli";
 import { CustomTestimonial } from "../components/CustomTestimonial";
@@ -21,13 +21,24 @@ export default function HomePage() {
       >
         <div className="absolute inset-0 bg-black/20 md:bg-transparent z-0" />
           <div className="relative z-10 w-full">
-              <CustomBanner 
-              // Personalizado
-              />
+              <CustomBanner />
+
           </div>
-      </section>
+        </section>
+
         <section id="portafolio">
           <CustomPortafoli/>
+        </section>
+        <section 
+            style={{
+            backgroundImage: 'url("/images/fondo-carrusel.jpg")',
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            minHeight: "250px"
+            }}
+          >
+            <CustomCarrousel />
         </section>
         <section 
               className=" scroll-mt-20" id="speakers"   
@@ -38,34 +49,19 @@ export default function HomePage() {
               backgroundRepeat: "no-repeat",
               minHeight: "400px"
           }}>
-          <CustomSpeakers
-            // Personalizado
-          />
-        </section>
-        <section className="hidden" style={{
-              backgroundImage: 'url("/images/carrousel-image.webp")',
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              backgroundRepeat: "no-repeat",
-              minHeight: "300px"
-        }}>
-          <CustomCarrousel
-            // Personalizado
-          
-          />
+
+          <CustomSpeakers />
         </section>
         <section 
           className="p-5 bg-[#F2F2F2] py-25 scroll-mt-20 hidden"
           id="inscribete"
         >
-          <CustomInscriptions 
-            // Personalizado
-          />
+          <CustomInscriptions />
+
         </section>
         <section id="testimonios" className=" scroll-mt-20 ">
-          <CustomTestimonial 
-            // Personalizado
-          />
+          <CustomTestimonial />
+
         </section>
     </div>
   )
