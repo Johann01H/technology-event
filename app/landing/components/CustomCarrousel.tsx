@@ -7,34 +7,41 @@ import React from "react"
 import Autoplay from "embla-carousel-autoplay"
 
 export const CustomCarrousel = () => {
-
-  const plugin = React.useRef(
-    Autoplay({ delay: 2000, stopOnInteraction: true })
+  const autoplay = React.useRef(
+    Autoplay({
+      delay: 3000,
+      stopOnInteraction: false,
+      stopOnMouseEnter: true,
+    })
   )
 
   return (
-    <div className="w-full">
-        {/* *TODO: Is pending image modified !! */}
+    <div className="w-full overflow-hidden">
       <Carousel
-        plugins={[plugin.current]}
-        onMouseEnter={plugin.current.stop}
-        onMouseLeave={plugin.current.reset}
+        plugins={[autoplay.current]}
+        onMouseEnter={() => autoplay.current.stop()}
+        onMouseLeave={() => autoplay.current.reset()}
         opts={{
-          align: "start",
+          align: "center",
           loop: true,
         }}
-        className="w-full pb-10 "
+        className="w-full py-10"
       >
-        <CarouselContent >
+        {/* Eliminamos posibles desplazamientos laterales */}
+        <CarouselContent className="ml-0">
           {imageList.map((img, key) => (
-            <CarouselItem key={key} className="pl-0 basis-1/4">
-              <div className="relative w-full h-28 md:h-36 mt-14">
+            <CarouselItem
+              key={key}
+              className="lg:basis-1/3 sm:basis-full shrink-0 flex items-center justify-center"
+            >
+              <div className="relative w-full max-w-5xl h-40 sm:h-48 md:h-56 lg:h-64">
                 <Image
                   src={img.image}
                   alt={img.alt}
                   fill
-                  className="object-cover"
-                  priority
+                  sizes="100vw"
+                  className="object-contain"
+                  priority={key === 0}
                 />
               </div>
             </CarouselItem>

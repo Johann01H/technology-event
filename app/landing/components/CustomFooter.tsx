@@ -91,11 +91,11 @@ return (
                     <a href="tel:+573001234567"
                         className="flex items-center gap-3 text-slate-400 hover:text-fuchsia-400 transition-colors">
                         <Phone className="w-5 h-5" />
-                        <span>(+57) 3132315425 / 3027097117</span>
+                        <span>(+57) 3239442725 | 3027097117</span>
                     </a>
                     <div className="flex items-center gap-3 text-slate-400">
                         <MapPin className="w-5 h-5 shrink-0" />
-                        <span>Centro de Convenciones, Palmira, Colombia</span>
+                        <span>Cra 28 # 28-56 oficina 301 Edificio Torrepac | Palmira  </span>
                     </div>
                 </div>
             </div>
@@ -172,7 +172,7 @@ return (
                             src={"/images/avatar-johann.png"}
                             width={25}
                             height={25}
-                         />
+                        />
                         <span className="text-slate-400 font-medium cursor-pointer hover:text-white" ><a href="https://johanndev.online/" target="_blank" >JoaDev</a></span>
                     </div>
                 </div>
