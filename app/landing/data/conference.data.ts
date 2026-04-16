@@ -4,7 +4,7 @@ interface Props {
     id: number,
     descripcion: string
     tipo: "video" | "imagen",
-    categoria: "conferencias" ,
+    categoria: string ,
     thumbnail?: string
     src: string,
 }
@@ -13,69 +13,70 @@ export const galeria:Props[] = [
   {
     id: 1,
     tipo: "imagen",
-    categoria: "conferencias",
+    categoria: "Conferencia | Cali, Palmira",
     src: "/images/conferencia-1.jpeg",
-    descripcion: "Más de 100 asistentes en la apertura del evento"
+    descripcion: "11/09/2025 | Cámara De Comercio"
   },
   {
     id: 2,
     tipo: "imagen",
-    categoria: "conferencias",
+    categoria: "Conferencia | Cali, Palmira",
     src: "/images/conferencia-2.jpeg",
-    descripcion: "Sesión práctica con expertos en inteligencia artificial"
+    descripcion: "11/09/2025 | Cámara De Comercio"
   },
   {
     id: 3,
     tipo: "video",
-    categoria: "conferencias",
+    categoria: "Conferencia | Cali, Palmira",
     src: "/videos/conferencia-ignacio.mp4",
-    descripcion: "Conexiones que transforman carreras",
+    descripcion: "11/09/2025 | Cámara De Comercio",
     thumbnail: "/images/ignacio-conferencia.png"
   },
   
   {
     id: 5,
     tipo: "imagen",
-    categoria: "conferencias",
+    categoria: "Conferencia | Cali, Palmira",
     src: "/images/conferencias-6.jpeg",
-    descripcion: "Equipos trabajando en soluciones innovadoras"
+    descripcion: "11/09/2025 | Cámara De Comercio"
   },
   {
     id: 6,
     tipo: "imagen",
-    categoria: "conferencias",
+    categoria: "Conferencia | Cali, Palmira",
     src: "/images/conferencias-5.jpeg",
-    descripcion: "Momentos de conexión entre sesiones"
+    descripcion: "30/10/2025 | Palma Real Coomeva"
   },
   {
     id: 7,
     tipo: "imagen",
-    categoria: "conferencias",
+    categoria: "Conferencia | Cali, Palmira ",
     src: "/images/conferencia-4.jpeg",
-    descripcion: "Debate sobre normatividad digital"
+    descripcion: "11/09/2025 | Cámara De Comercio"
   },
   {
     id: 8,
     tipo: "video",
-    categoria: "conferencias",
+    categoria: "Conferencia | Cali, Palmira",
     src: "/videos/dudas.mp4",
-    descripcion: "Maratón de desarrollo e innovación",
+    descripcion: "11/09/2025 | Cámara De Comercio",
     thumbnail: "/images/dudas.png"
   },
   {
     id: 9,
     tipo: "video",
-    categoria: "conferencias",
+    categoria: "Conferencia | Cali, Palmira",
     src: "/videos/coomeva-entrevistas.mp4",
     thumbnail: "/images/datasys-coomeva.png",
-    descripcion: "Celebración del cierre del evento"
+    descripcion: "30/10/2025 | Palma Real Coomeva"
   },
   {
     id: 10,
     tipo: "video",
-    categoria: "conferencias",
+    categoria: "Conferencia | Cali, Palmira | Palma Real Coomeva",
     src: "/videos/FINAL-EDICION.mp4",
     thumbnail: "/images/legalidad-tecnologia.png",
-    descripcion: "Celebración del cierre del evento"
+    descripcion: "30/10/2025 | Palma Real Coomeva"
+    
   }
 ]

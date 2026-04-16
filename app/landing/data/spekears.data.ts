@@ -8,13 +8,14 @@ interface PropsSpeakears {
 }
 
 export const speakersItems: PropsSpeakears[] = [
+    
     {
         speakerImage: "/images/avatar-jairo.png",
         name: "Jairo Alberto Gomez",
         email: "asociadosabogadosjl@gmail.com",
         specialty: "",
         topic: "Marco legal y normativas para proteger tu entorno tecnológico.",
-        company: "Abogado Legalidad | Cali"
+        company: "Abogado Legalidad | Cali, Palmira"
     },
     {
         speakerImage: "/images/avatar-chacon.png",
@@ -22,7 +23,7 @@ export const speakersItems: PropsSpeakears[] = [
         specialty: "Chacón Ingeniería SAS",
         email: "chaconingenieriasas@gmail.com",
         topic: "Servicios de ingeniería y mantenimiento de infraestructura técnica.",
-        company: "Chacon Ingenieria | Cali"
+        company: "Chacon Ingenieria | Cali, Palmira"
     },
     {
         speakerImage: "/images/avatar-johann.png",
@@ -30,7 +31,7 @@ export const speakersItems: PropsSpeakears[] = [
         specialty: "Desarrollador Fullstack / web",
         email: "johannvelez71@gmail.com",
         topic: "Arquitectura Digital de Alto Impacto para el Sector Industrial",
-        company: "Lucky Commerce | Cali"
+        company: "Lucky Commerce | Cali, Palmira"
     },
     {
         speakerImage: "/images/avatar-maribel-salamanca.jpg",
@@ -38,7 +39,7 @@ export const speakersItems: PropsSpeakears[] = [
         specialty: "SEO / Marketing / LuckyCommerce",
         email: "occidentemovilidadrg@nexsysla.com",
         topic: "Herramientas y servicios para potenciar tu marca y ventas.",
-        company: "Lucky Commerce | Cali"
+        company: "Lucky Commerce | Cali, Palmira"
     },
     {
         speakerImage: "/images/avatar-jhonatan-ramos.png",
@@ -46,7 +47,7 @@ export const speakersItems: PropsSpeakears[] = [
         specialty: "",
         email: "johnnatans_ramos@coomeva.com.co",
         topic: "Servicios y soluciones integrales de la Fundación",
-        company: "Fundación Coomeva | Cali"
+        company: "Fundación Coomeva | Cali, Palmira"
     },
     {
         speakerImage: "/images/avatar-javier.png",
@@ -54,7 +55,7 @@ export const speakersItems: PropsSpeakears[] = [
         specialty: "Infraestructura de Red", // Más profesional que solo la marca
         email: "Johnnatans_ramos@coomeva.com.co",
         topic: "Soluciones de conectividad empresarial y redes de alta velocidad.", 
-        company: "TP-LINK | Cali"
+        company: "TP-LINK | Cali, Palmira"
     },
     {
         speakerImage: "/images/avatar-ballesteros.png",
@@ -62,7 +63,7 @@ export const speakersItems: PropsSpeakears[] = [
         specialty: "Hardware & Computación",
         email: "Johnnatans_ramos@coomeva.com.co",
         topic: "Innovación en hardware de alto rendimiento y ecosistemas digitales.",
-        company: "Lenovo | Cali"
+        company: "Lenovo | Cali, Palmira"
     }
 ]
 
