@@ -148,7 +148,6 @@ export function CustomPortafoli() {
                   src={itemModal.src}
                   className="h-full w-full object-contain"
                   controls
-                  muted
                   autoPlay
                   playsInline
                 />
