@@ -154,8 +154,8 @@ export function CustomTestimonial () {
                       alt={testimonio.nombre}
                       className="h-full w-full object-cover"
                       crossOrigin="anonymous"
-                      width={10}
-                      height={10}
+                      width={100}
+                      height={100}
                     />
                   </div>
                   <div>
