@@ -36,37 +36,6 @@ return (
         <div className="absolute bottom-0 right-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl" />
     </div>
 
-    {/* Newsletter Section */}
-    <div className="relative border-b border-slate-800">
-        <div className="container mx-auto px-6 py-16">
-            <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
-                <div className="text-center lg:text-left">
-                    <h3 className="text-2xl md:text-3xl font-bold text-white mb-2">
-                        Mantente{" "}
-                        <span className="text-transparent bg-clip-text bg-linear-to-r from-fuchsia-500 to-cyan-400">
-                            Informado
-                        </span>
-                    </h3>
-                    <p className="text-slate-400">
-                        Suscríbete y recibe las últimas novedades del evento
-                    </p>
-                </div>
-                <div className="flex w-full lg:w-auto">
-                    <div className="relative flex-1 lg:w-80">
-                        <input type="email" placeholder="Tu correo electrónico"
-                            className="w-full px-6 py-4 bg-slate-900/50 border border-slate-700 rounded-l-full text-white placeholder:text-slate-500 focus:outline-none focus:border-fuchsia-500 transition-colors" />
-                    </div>
-                    <button
-                        className="px-6 py-4 bg-linear-to-r from-fuchsia-600 to-fuchsia-500 rounded-r-full text-white font-semibold hover:from-fuchsia-500 hover:to-cyan-500 transition-all duration-300 flex items-center gap-2 group">
-                        Suscribir
-                        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    {/* Main Footer */}
     <div className="relative container mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
             {/* Brand Column */}
